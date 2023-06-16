@@ -1,7 +1,7 @@
-const apikey = '';
+const apikey = 'a518d734-0ed7-4c5d-aa15-025077ca93b3';
 const apihost = 'https://todo-api.coderslab.pl';
 
-if(apikey == '') {
+if(apikey === '') {
     alert('Wejdź na https://todo-api.coderslab.pl/apikey/create oraz skopiuj token i wklej do stałej "apikey", w pliku script.js. Inaczej nic się nie uda!');
 }
 
@@ -252,7 +252,7 @@ function renderOperation(ul, status, operationId, operationDescription, timeSpen
     time.innerText = formatTime(timeSpent);
     descriptionDiv.appendChild(time);
 
-    if(status == "open") {
+    if(status === "open") {
         const controlDiv = document.createElement('div');
         controlDiv.className = 'js-task-open-only';
         li.appendChild(controlDiv);
